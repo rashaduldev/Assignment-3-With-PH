@@ -17,12 +17,12 @@
     <!-- This is Header part -->
     <header>
         <!-- navbar -->
-        <section class="max-w-screen-lg my-8">
+        <section class="max-w-screen  mx-auto  px-8 md:px-16 lg:px-24 mx-11 py-5 my-10 bg-red-400">
             <nav class="">
-                <div class="navbar bg-[#F85559] rounded-full">
+                <div class="navbar bg-[#F85559] rounded-full flex">
                     <!-- start -->
                     <div class="navbar-start hidden lg:flex">
-                        <ul class="menu menu-horizontal px-1 text-xl text-white">
+                        <ul class="menu menu-horizontal px-1 text-xl text-white p-1">
                             <li><a>Home</a></li>
                             <li><a>About Us</a></li>
                             <li><a>Shop</a></li>
@@ -37,10 +37,9 @@
                     </div>
                     <!-- end -->
                     <div class="navbar-end items-center">
-                        <div class=" sm:hidden md:hidden lg:flex flex-row">
+                        <div class="sm:hidden lg:flex flex-row">
                             <a class="relative">
-                                <input class="w-auto  md:w-40 lg:w-72 p-4 border-2 rounded-full text-black" type="text"
-                                    placeholder="Search Here">
+                                <input class="w-auto lg:w-72 p-4 border-2 rounded-full text-black" type="text" placeholder="Search Here">
                                 <div class=" absolute top-0 lg:top-4 right-4 text-2xl cursor-pointer	">
                                     <i class="fa-solid fa-magnifying-glass"></i>
                                 </div>
@@ -48,29 +47,31 @@
                         </div>
                       
                         <div class="dropdown lg:hidden">
-                            <label tabindex="0" class="btn btn-ghost lg:hidden">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    class="lg:inline-block w-5 h-5 stroke-current">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M4 6h16M4 12h16M4 18h16"></path>
-                                </svg>
-                            </label>
-                            <ul tabindex="0"
-                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                                <li><a>Home</a></li>
-                                <li><a>About Us</a></li>
-                                <li><a>Shop</a></li>
-                                <li><a>All Fruits</a></li>
-                                <li>
-                                    <a class="relative">
-                                        <input class="border-2 rounded-full text-black mx-auto" type="text"
-                                            placeholder="Search Here">
-                                        <div class=" absolute top-1.5 right-5 cursor-pointer	">
-                                            <i class="fa-solid fa-magnifying-glass"></i>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
+                            <form class="w-4" action="">
+                                <label tabindex="0" class="btn btn-ghost">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        class="lg:inline-block w-5 h-5 stroke-current">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 6h16M4 12h16M4 18h16"></path>
+                                    </svg>
+                                </label>
+                                <ul tabindex="0"
+                                    class="menu menu-[28px] dropdown-content mt-3 z-[1] pr-0 shadow bg-base-100 rounded-box w-52">
+                                    <li><a>Home</a></li>
+                                    <li><a>About Us</a></li>
+                                    <li><a>Shop</a></li>
+                                    <li><a>All Fruits</a></li>
+                                    <li>
+                                        <a class="relative">
+                                            <input class="border-2 rounded-full text-black mx-auto" type="text"
+                                                placeholder="Search Here">
+                                            <div class=" absolute top-1.5 right-5 cursor-pointer	">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </form>
 
                         </div>
                     </div>
